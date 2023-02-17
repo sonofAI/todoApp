@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+/* colors: https://color.adobe.com/trends/Graphic-design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #736B66;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+#title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#title {
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #736B66;
+}
+
+#title:focus {
+    outline: none;
+}
+
+#todos {
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+#todos p {
+    padding: 2%;
+}
+
+.checkboxes {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#new-todo {
+    padding: 2%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.9);
+    margin: 2%;
+}
+
+.btn {
+    padding: 3%;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #BBD94E;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.9);
+    margin: 2%;
+}
+
+.btn:hover {
+    opacity: .75;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.del {
+    padding: 4% 4% 2% 4%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 3%;
+    background-color: #F24141;
+}
+
+.todo-items {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    background-color: #B0B7BF;
+    border-radius: 5px;
+    margin: 2% 0;
+}
+
+.todo-items button {
+    margin-left: auto;
+}
+
+.todo-items p {
+    max-width: 80%;
+}
+
+
+@media (min-width: 800px) {
+    .todo-items {
+        width: 600px;
+    }
+
+    #todos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
